@@ -1,0 +1,121 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.juego {
+    flex: 1;
+}
+
+.menu {
+    margin-top: 50px;
+    width: 900px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    border: 2px solid #132639;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+td {
+    border: 1px solid #1e90ff;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+tr:nth-child(even) td:nth-child(even),
+tr:nth-child(odd) td:nth-child(odd) {
+    background: #f0f8ff;
+}
+
+tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd) {
+    background: #add8e6;
+}
+
+table tr:first-child td,
+table tr:last-child td,
+table td:first-child,
+table td:last-child {
+    background-color: #1e90ff;
+}
+
+/* Estilos para los elementos dentro de .menu */
+.menu select,
+.menu textarea {
+    font-size: 1.3em;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #1e90ff;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+}
+
+.menu select {
+    width: 200px;
+}
+
+.menu textarea {
+    width: calc(100% - 20px);
+    height: 150px;
+    resize: none;
+}
+
+.menu button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+}
+
+.menu input[type="file"] {
+    font-size: 1.2em;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+}
+
+#turno {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #1e90ff;
+}
+
+/* Estilos para los botones */
+.button1 {
+    font-size: 2em;
+    position: relative;
+    margin-top: 20px;
+    background-color: #d8d8d8;
+}
+
+.button2 {
+    font-size: 2em;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: #9bbaeb;
+}
+
+.button3 {
+    font-size: 2em;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: #1e90ff;
+}
